@@ -23,6 +23,9 @@
       ],
       "@test-mellow-hellow/common/ui": [
         "libs/common/ui/src/index.ts"
+      ],
+      "@test-mellow-hellow/home": [
+        "libs/home/src/index.ts"
       ]
     }
   },
