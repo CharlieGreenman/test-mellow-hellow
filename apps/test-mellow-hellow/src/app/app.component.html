@@ -2,6 +2,20 @@
   (sideNavToggle)="sideNavToggle()"
 ></test-mellow-hellow-global-header>
 <div class="wrapper">
-  <div class="container"></div>
+  <div class="container">
+    <test-mellow-hellow-global-sidenav [opened]="sideNavOpen">
+      <mat-nav-list sidenav>
+        <a
+          mat-list-item
+          routerLinkActive="active-link"
+          routerLink="/"
+          (click)="sideNavToggle()"
+        >
+          <span class="App__sidenav-text">Home</span>
+        </a>
+      </mat-nav-list>
+      <router-outlet></router-outlet>
+    </test-mellow-hellow-global-sidenav>
+  </div>
 </div>
 <test-mellow-hellow-global-footer> </test-mellow-hellow-global-footer>
